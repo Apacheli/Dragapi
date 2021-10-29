@@ -2,6 +2,11 @@
 
 import type { NamedAPIResource } from "./utility.ts";
 
+export interface PaginationOptions {
+  limit?: number;
+  offset?: number;
+}
+
 /** https://pokeapi.co/docs/v2#named */
 export interface NamedAPIResourceList<T> {
   /** The total number of resources available from this API. */
