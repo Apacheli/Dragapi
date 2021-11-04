@@ -1,3 +1,4 @@
+import { request } from "./request.ts";
 import type {
   Ability,
   Berry,
@@ -52,7 +53,7 @@ import type {
   VersionGroup,
 } from "./resources/mod.ts";
 
-import { request } from "./request.ts";
+export * from "./resources/mod.ts";
 
 export type Identifier = string | number;
 
