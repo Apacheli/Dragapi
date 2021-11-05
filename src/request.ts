@@ -1,7 +1,7 @@
 import type { PaginationOptions } from "./resources/pagination.ts";
 
 export const request = async (endpoint: string, query?: PaginationOptions) => {
-  let url = `https://pokeapi.co/api/v2${endpoint}`;
+  let url = `https://pokeapi.co/api/v2/${endpoint}`;
   if (query) {
     url += `?${new URLSearchParams(query as Record<string, string>)}`;
   }
