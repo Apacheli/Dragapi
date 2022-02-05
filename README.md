@@ -7,6 +7,9 @@ Deno bindings for [PokéAPI](https://pokeapi.co/).
 See the generated documentation
 [here](https://doc.deno.land/https/github.com/apacheli/dragapi/raw/dev/mod.ts).
 
+All types provided by dragapi are referenced from the PokéAPI documentation.
+This should improve parity.
+
 ### Example
 
 Make sure to enable `--allow-net`.

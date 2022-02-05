@@ -53,8 +53,8 @@ import type {
   VersionGroup,
 } from "./resources/mod.ts";
 
-export * from "./resources/mod.ts";
 export * from "./get_endpoints.ts";
+export * from "./resources/mod.ts";
 
 export type Identifier = string | number;
 
