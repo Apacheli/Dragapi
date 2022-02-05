@@ -57,388 +57,363 @@ export * from "./resources/mod.ts";
 
 export type Identifier = string | number;
 
-export const abilityList = (
+export const getAbilityList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Ability>> => request("ability", query);
 
-export const ability = (ability: Identifier): Promise<Ability> =>
+export const getAbility = (ability: Identifier) =>
   request(`ability/${ability}`);
 
-export const berryList = (
+export const getBerryList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Berry>> => request("berry", query);
 
-export const berry = (berry: Identifier): Promise<Berry> =>
-  request(`berry/${berry}`);
+export const getBerry = (berry: Identifier) => request(`berry/${berry}`);
 
-export const berryFirmnessList = (
+export const getBerryFirmnessList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<BerryFirmness>> =>
   request("berry-firmness", query);
 
-export const berryFirmness = (
-  berryFirmness: Identifier,
-): Promise<BerryFirmness> => request(`berry-firmness/${berryFirmness}`);
+export const getBerryFirmness = (berryFirmness: Identifier) =>
+  request(`berry-firmness/${berryFirmness}`);
 
-export const berryFlavorList = (
+export const getBerryFlavorList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<BerryFlavor>> => request("berry-flavor", query);
 
-export const berryFlavor = (berryFlavor: Identifier): Promise<BerryFlavor> =>
+export const getBerryFlavor = (berryFlavor: Identifier) =>
   request(`berry-flavor/${berryFlavor}`);
 
-export const characteristicList = (
+export const getCharacteristicList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Characteristic>> =>
   request("characteristic", query);
 
-export const characteristic = (
-  characteristic: Identifier,
-): Promise<Characteristic> => request(`characteristic/${characteristic}`);
+export const getCharacteristic = (characteristic: Identifier) =>
+  request(`characteristic/${characteristic}`);
 
-export const contestEffectList = (
+export const getContestEffectList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<ContestEffect>> =>
   request("contest-effect", query);
 
-export const contestEffect = (
-  contestEffect: Identifier,
-): Promise<ContestEffect> => request(`contest-effect/${contestEffect}`);
+export const getContestEffect = (contestEffect: Identifier) =>
+  request(`contest-effect/${contestEffect}`);
 
-export const contestTypeList = (
+export const getContestTypeList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<ContestType>> => request("contest-type", query);
 
-export const contestType = (contestType: Identifier): Promise<ContestType> =>
+export const getContestType = (contestType: Identifier) =>
   request(`contest-type/${contestType}`);
 
-export const eggGroupList = (
+export const getEggGroupList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<EggGroup>> => request("egg-group", query);
 
-export const eggGroup = (eggGroup: Identifier): Promise<EggGroup> =>
+export const getEggGroup = (eggGroup: Identifier) =>
   request(`egg-group/${eggGroup}`);
 
-export const encounterConditionList = (
+export const getEncounterConditionList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<EncounterCondition>> =>
   request("encounter-condition", query);
 
-export const encounterCondition = (
-  encounterCondition: Identifier,
-): Promise<EncounterCondition> =>
+export const getEncounterCondition = (encounterCondition: Identifier) =>
   request(`encounter-condition/${encounterCondition}`);
 
-export const encounterConditionValueList = (
+export const getEncounterConditionValueList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<EncounterConditionValue>> =>
   request("encounter-condition-value", query);
 
-export const encounterConditionValue = (
+export const getEncounterConditionValue = (
   encounterConditionValue: Identifier,
-): Promise<EncounterConditionValue> =>
-  request(`encounter-condition-value/${encounterConditionValue}`);
+) => request(`encounter-condition-value/${encounterConditionValue}`);
 
-export const encounterMethodList = (
+export const getEncounterMethodList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<EncounterMethod>> =>
   request("encounter-method", query);
 
-export const encounterMethod = (
-  encounterMethod: Identifier,
-): Promise<EncounterMethod> => request(`encounter-method/${encounterMethod}`);
+export const getEncounterMethod = (encounterMethod: Identifier) =>
+  request(`encounter-method/${encounterMethod}`);
 
-export const evolutionChainList = (
+export const getEvolutionChainList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<EvolutionChain>> =>
   request("evolution-chain", query);
 
-export const evolutionChain = (
-  evolutionChain: Identifier,
-): Promise<EvolutionChain> => request(`evolution-chain/${evolutionChain}`);
+export const getEvolutionChain = (evolutionChain: Identifier) =>
+  request(`evolution-chain/${evolutionChain}`);
 
-export const evolutionTriggerList = (
+export const getEvolutionTriggerList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<EvolutionTrigger>> =>
   request("evolution-trigger", query);
 
-export const evolutionTrigger = (
-  evolutionTrigger: Identifier,
-): Promise<EvolutionTrigger> =>
+export const getEvolutionTrigger = (evolutionTrigger: Identifier) =>
   request(`evolution-trigger/${evolutionTrigger}`);
 
-export const genderList = (
+export const getGenderList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Gender>> => request("gender", query);
 
-export const gender = (gender: Identifier): Promise<Gender> =>
-  request(`gender/${gender}`);
+export const getGender = (gender: Identifier) => request(`gender/${gender}`);
 
-export const generationList = (
+export const getGenerationList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Generation>> => request("generation", query);
 
-export const generation = (generation: Identifier): Promise<Generation> =>
+export const getGeneration = (generation: Identifier) =>
   request(`generation/${generation}`);
 
-export const growthRateList = (
+export const getGrowthRateList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<GrowthRate>> => request("growth-rate", query);
 
-export const growthRate = (growthRate: Identifier): Promise<GrowthRate> =>
+export const getGrowthRate = (growthRate: Identifier) =>
   request(`growth-rate/${growthRate}`);
 
-export const itemList = (
+export const getItemList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Item>> => request("item", query);
 
-export const item = (item: Identifier): Promise<Item> =>
-  request(`item/${item}`);
+export const getItem = (item: Identifier) => request(`item/${item}`);
 
-export const itemAttributeList = (
+export const getItemAttributeList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<ItemAttribute>> =>
   request("item-attribute", query);
 
-export const itemAttribute = (
-  itemAttribute: Identifier,
-): Promise<ItemAttribute> => request(`item-attribute/${itemAttribute}`);
+export const getItemAttribute = (itemAttribute: Identifier) =>
+  request(`item-attribute/${itemAttribute}`);
 
-export const itemCategoryList = (
+export const getItemCategoryList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<ItemCategory>> =>
   request("item-category", query);
 
-export const itemCategory = (itemCategory: Identifier): Promise<ItemCategory> =>
+export const getItemCategory = (itemCategory: Identifier) =>
   request(`item-category/${itemCategory}`);
 
-export const itemFlingEffectList = (
+export const getItemFlingEffectList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<ItemFlingEffect>> =>
   request("item-fling-effect", query);
 
-export const itemFlingEffect = (
-  itemFlingEffect: Identifier,
-): Promise<ItemFlingEffect> => request(`item-fling-effect/${itemFlingEffect}`);
+export const getItemFlingEffect = (itemFlingEffect: Identifier) =>
+  request(`item-fling-effect/${itemFlingEffect}`);
 
-export const itemPocketList = (
+export const getItemPocketList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<ItemPocket>> => request("item-pocket", query);
 
-export const itemPocket = (itemPocket: Identifier): Promise<ItemPocket> =>
+export const getItemPocket = (itemPocket: Identifier) =>
   request(`item-pocket/${itemPocket}`);
 
-export const languageList = (
+export const getLanguageList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Language>> => request("language", query);
 
-export const language = (language: Identifier): Promise<Language> =>
+export const getLanguage = (language: Identifier) =>
   request(`language/${language}`);
 
-export const locationList = (
+export const getLocationList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Location>> => request("location", query);
 
-export const location = (location: Identifier): Promise<Location> =>
+export const getLocation = (location: Identifier) =>
   request(`location/${location}`);
 
-export const locationAreaList = (
+export const getLocationAreaList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<LocationArea>> =>
   request("location-area", query);
 
-export const locationArea = (locationArea: Identifier): Promise<LocationArea> =>
+export const getLocationArea = (locationArea: Identifier) =>
   request(`location-area/${locationArea}`);
 
-export const machineList = (
+export const getMachineList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Machine>> => request("machine", query);
 
-export const machine = (machine: Identifier): Promise<Machine> =>
+export const getMachine = (machine: Identifier) =>
   request(`machine/${machine}`);
 
-export const moveList = (
+export const getMoveList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Move>> => request("move", query);
 
-export const move = (move: Identifier): Promise<Move> =>
-  request(`move/${move}`);
+export const getMove = (move: Identifier) => request(`move/${move}`);
 
-export const moveAilmentList = (
+export const getMoveAilmentList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<MoveAilment>> => request("move-ailment", query);
 
-export const moveAilment = (moveAilment: Identifier): Promise<MoveAilment> =>
+export const getMoveAilment = (moveAilment: Identifier) =>
   request(`move-ailment/${moveAilment}`);
 
-export const moveBattleStyleList = (
+export const getMoveBattleStyleList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<MoveBattleStyle>> =>
   request("move-battle-style", query);
 
-export const moveBattleStyle = (
-  moveBattleStyle: Identifier,
-): Promise<MoveBattleStyle> => request(`move-battle-style/${moveBattleStyle}`);
+export const getMoveBattleStyle = (moveBattleStyle: Identifier) =>
+  request(`move-battle-style/${moveBattleStyle}`);
 
-export const moveCategoryList = (
+export const getMoveCategoryList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<MoveCategory>> =>
   request("move-category", query);
 
-export const moveCategory = (moveCategory: Identifier): Promise<MoveCategory> =>
+export const getMoveCategory = (moveCategory: Identifier) =>
   request(`move-category/${moveCategory}`);
 
-export const moveDamageClassList = (
+export const getMoveDamageClassList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<MoveDamageClass>> =>
   request("move-damage-class", query);
 
-export const moveDamageClass = (
-  moveDamageClass: Identifier,
-): Promise<MoveDamageClass> => request(`move-damage-class/${moveDamageClass}`);
+export const getMoveDamageClass = (moveDamageClass: Identifier) =>
+  request(`move-damage-class/${moveDamageClass}`);
 
-export const moveLearnMethodList = (
+export const getMoveLearnMethodList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<MoveLearnMethod>> =>
   request("move-learn-method", query);
 
-export const moveLearnMethod = (
-  moveLearnMethod: Identifier,
-): Promise<MoveLearnMethod> => request(`move-learn-method/${moveLearnMethod}`);
+export const getMoveLearnMethod = (moveLearnMethod: Identifier) =>
+  request(`move-learn-method/${moveLearnMethod}`);
 
-export const moveTargetList = (
+export const getMoveTargetList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<MoveTarget>> => request("move-target", query);
 
-export const moveTarget = (moveTarget: Identifier): Promise<MoveTarget> =>
+export const getMoveTarget = (moveTarget: Identifier) =>
   request(`move-target/${moveTarget}`);
 
-export const natureList = (
+export const getNatureList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Nature>> => request("nature", query);
 
-export const nature = (nature: Identifier): Promise<Nature> =>
-  request(`nature/${nature}`);
+export const getNature = (nature: Identifier) => request(`nature/${nature}`);
 
-export const palParkAreaList = (
+export const getPalParkAreaList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<PalParkArea>> =>
   request("pal-park-area", query);
 
-export const palParkArea = (palParkArea: Identifier): Promise<PalParkArea> =>
+export const getPalParkArea = (palParkArea: Identifier) =>
   request(`pal-park-area/${palParkArea}`);
 
-export const pokeathlonStatList = (
+export const getPokeathlonStatList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<PokeathlonStat>> =>
   request("pokeathlon-stat", query);
 
-export const pokeathlonStat = (
-  pokeathlonStat: Identifier,
-): Promise<PokeathlonStat> => request(`pokeathlon-stat/${pokeathlonStat}`);
+export const getPokeathlonStat = (pokeathlonStat: Identifier) =>
+  request(`pokeathlon-stat/${pokeathlonStat}`);
 
-export const pokedexList = (
+export const getPokedexList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Pokedex>> => request("pokedex", query);
 
-export const pokedex = (pokedex: Identifier): Promise<Pokedex> =>
+export const getPokedex = (pokedex: Identifier) =>
   request(`pokedex/${pokedex}`);
 
-export const pokemonList = (
+export const getPokemonList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Pokemon>> => request("pokemon", query);
 
-export const pokemon = (pokemon: Identifier): Promise<Pokemon> =>
+export const getPokemon = (pokemon: Identifier) =>
   request(`pokemon/${pokemon}`);
 
-export const pokemonColorList = (
+export const getPokemonColorList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<PokemonColor>> =>
   request("pokemon-color", query);
 
-export const pokemonColor = (pokemonColor: Identifier): Promise<PokemonColor> =>
+export const getPokemonColor = (pokemonColor: Identifier) =>
   request(`pokemon-color/${pokemonColor}`);
 
-export const pokemonFormList = (
+export const getPokemonFormList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<PokemonForm>> => request("pokemon-form", query);
 
-export const pokemonForm = (pokemonForm: Identifier): Promise<PokemonForm> =>
+export const getPokemonForm = (pokemonForm: Identifier) =>
   request(`pokemon-form/${pokemonForm}`);
 
-export const pokemonHabitatList = (
+export const getPokemonHabitatList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<PokemonHabitat>> =>
   request("pokemon-habitat", query);
 
-export const pokemonHabitat = (
-  pokemonHabitat: Identifier,
-): Promise<PokemonHabitat> => request(`pokemon-habitat/${pokemonHabitat}`);
+export const getPokemonHabitat = (pokemonHabitat: Identifier) =>
+  request(`pokemon-habitat/${pokemonHabitat}`);
 
-export const pokemonShapeList = (
+export const getPokemonShapeList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<PokemonShape>> =>
   request("pokemon-shape", query);
 
-export const pokemonShape = (pokemonShape: Identifier): Promise<PokemonShape> =>
+export const getPokemonShape = (pokemonShape: Identifier) =>
   request(`pokemon-shape/${pokemonShape}`);
 
-export const pokemonSpeciesList = (
+export const getPokemonSpeciesList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<PokemonSpecies>> =>
   request("pokemon-species", query);
 
-export const pokemonSpecies = (
-  pokemonSpecies: Identifier,
-): Promise<PokemonSpecies> => request(`pokemon-species/${pokemonSpecies}`);
+export const getPokemonSpecies = (pokemonSpecies: Identifier) =>
+  request(`pokemon-species/${pokemonSpecies}`);
 
-export const regionList = (
+export const getRegionList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Region>> => request("region", query);
 
-export const region = (region: Identifier): Promise<Region> =>
-  request(`region/${region}`);
+export const getRegion = (region: Identifier) => request(`region/${region}`);
 
-export const statList = (
+export const getStatList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Stat>> => request("stat", query);
 
-export const stat = (stat: Identifier): Promise<Stat> =>
-  request(`stat/${stat}`);
+export const getStat = (stat: Identifier) => request(`stat/${stat}`);
 
-export const superContestEffectList = (
+export const getSuperContestEffectList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<SuperContestEffect>> =>
   request("super-contest-effect", query);
 
-export const superContestEffect = (
-  superContestEffect: Identifier,
-): Promise<SuperContestEffect> =>
+export const getSuperContestEffect = (superContestEffect: Identifier) =>
   request(`super-contest-effect/${superContestEffect}`);
 
-export const typeList = (
+export const getTypeList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Type>> => request("type", query);
 
-export const type = (type: Identifier): Promise<Type> =>
-  request(`type/${type}`);
+export const getType = (type: Identifier) => request(`type/${type}`);
 
-export const versionList = (
+export const getVersionList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<Version>> => request("version", query);
 
-export const version = (version: Identifier): Promise<Version> =>
+export const getVersion = (version: Identifier) =>
   request(`version/${version}`);
 
-export const versionGroupList = (
+export const getVersionGroupList = (
   query?: PaginationOptions,
 ): Promise<NamedAPIResourceList<VersionGroup>> =>
   request("version-group", query);
 
-export const versionGroup = (versionGroup: Identifier): Promise<VersionGroup> =>
+export const getVersionGroup = (versionGroup: Identifier) =>
   request(`version-group/${versionGroup}`);
 
-// This endpoint exists, but it is not listed
-export const pokemonLocationArea = (
+// Unlisted endpoints
+
+export const getPokemonLocationArea = (
   pokemon: Identifier,
 ): Promise<LocationAreaEncounter> => request(`/pokemon/${pokemon}/encounters`);
+
+export * from "./get_endpoints.ts";
